@@ -28,7 +28,7 @@ use yii\helpers\Html;
             </div>
         </div>
         <div class="flex">
-            THE SUM OF &nbsp;<u> <?= Html::encode($model->amount) ?> </u>&nbsp; POUNDS
+            THE SUM OF &nbsp;<u> <?= Yii::$app->formatter->asSpellout(Html::encode($model->amount)) ?> </u>&nbsp; POUNDS
         </div>
         <div class="flex">
             
